@@ -1,0 +1,34 @@
+def generar_fibonacci(n):
+    sucesion = []
+    a, b = 0, 1
+
+    for _ in range(n):
+        sucesion.append(a)
+        a, b = b, a + b
+
+    return sucesion
+
+
+def analizar_fibonacci():
+    while True:
+        try:
+            n = int(input("¿Cuántos términos de Fibonacci quieres generar?: "))
+            if n <= 0:
+                print("Ingresa un número mayor que 0.")
+                continue
+            break
+        except ValueError:
+            print("Por favor, escribe un número entero válido.")
+
+    serie = generar_fibonacci(n)
+    pares = [num for num in serie if num % 2 == 0]
+    impares = [num for num in serie if num % 2 != 0]
+    suma_total = sum(serie)
+
+    print(f"\nSerie completa ({n} términos): {serie}")
+    print(f"Números pares: {pares}")
+    print(f"Números impares: {impares}")
+    print(f"Suma total de la serie: {suma_total}")
+
+
+analizar_fibonacci()

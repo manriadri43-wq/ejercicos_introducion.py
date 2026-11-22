@@ -1,0 +1,7 @@
+inicio = int(input("¿Desde qué número quieres contar hacia atrás? "))
+
+while inicio >= 1:
+    print(inicio)
+    inicio -= 1
+
+print("¡Listo!")
