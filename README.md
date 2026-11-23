@@ -10,3 +10,6 @@ Proyecto para practicar el control de versiones con Git y GitHub.
 - Adrian Fernando Manrique Peralta
 - Camilo Enrique Franco Cuesta
 - Anthony Marcelo Mosquera Ayala
+
+
+Herramientas utilizadas: Git, GitHub y VS Code
